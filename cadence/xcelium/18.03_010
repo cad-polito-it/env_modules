@@ -14,6 +14,6 @@ setenv LM_LICENSE_FILE [getenv CADLS_SERVICES]
 setenv SNPSLMD_LICENSE_FILE [getenv CADLS_SERVICES]
 
 setenv CADENCE_XCELIUM /eda/cadence/2018-19/RHELx86/XCELIUM_18.03.010
-prepend-path PATH [getenv CADENCE_XCELIUM]/bin
-prepend-path PATH [getenv CADENCE_XCELIUM]/tools/bin
 prepend-path PATH [getenv CADENCE_XCELIUM]/tools/cdsgcc/gcc/bin
+prepend-path PATH [getenv CADENCE_XCELIUM]/tools/bin
+prepend-path PATH [getenv CADENCE_XCELIUM]/bin
