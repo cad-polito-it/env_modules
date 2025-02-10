@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    Powerpc - loads the Leon 4.4-2 software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the Leon 4.4-2 environment}
+
+conflict compiler/leon
+
+setenv LEON_PATH /software
+
+prepend-path PATH [getenv LEON_PATH]/sparc-elf-4.4.2/bin

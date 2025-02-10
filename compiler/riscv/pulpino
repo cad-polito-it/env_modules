@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    Powerpc - loads the Pulpino software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the Pulpino environment}
+
+conflict compiler/riscv
+
+setenv PULPINO_PATH /software
+
+prepend-path PATH [getenv PULPINO_PATH]/ri5cy_gnu_toolchain/bin

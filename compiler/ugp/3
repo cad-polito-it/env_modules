@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    Powerpc - loads the uGP 3 software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the uGP 3 environment}
+
+conflict compiler/ugp
+
+setenv UGP_PATH /software/ugp3
+
+prepend-path PATH [getenv UGP_PATH]/camellia/bin
