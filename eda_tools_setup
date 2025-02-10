@@ -1,0 +1,49 @@
+#!/bin/bash
+
+###### CADENCE TOOLS ######
+module load cadence/edi/14.13_000
+module load cadence/ic/23.10_020
+module load cadence/indago/18.03_001
+module load cadence/xcelium/23.03_007
+module load cadence/innovus/19.11_000
+module load cadence/jasper/2022.09_000
+module load cadence/mdv/18.03_005
+module load cadence/rc/14.11_000
+module load cadence/sig/18.00_000
+module load cadence/spb/17.20_045
+module load cadence/vipcat/11.30_057
+
+###### SIEMENTS/MENTOR TOOLS ######
+module load mentor_graphics/questa_cdc_fml/10.3d_2
+module load mentor_graphics/questa_codelink/10.4_1
+module load mentor_graphics/questa_infact/10.3d_2
+
+module load siemens/calibre/2022.4
+module load siemens/fpro/2020.1.1
+module load siemens/questa_core_prime/2022.4
+module load siemens/questa_vip/2022.4
+module load siemens/tessent/2022.3
+
+###### SYNOPSYS TOOLS ######
+module load synopsys/coretools/2022.12
+module load synopsys/starrc/2022.12
+module load synopsys/esp/2022.12               
+module load synopsys/fc/2022.12-SP6            
+module load synopsys/fm/2022.12                
+module load synopsys/hsimplus/2022.06-SP2      
+module load synopsys/hspice/2022.06-SP2        
+module load synopsys/syn/2022.12-SP7-3
+module load synopsys/tmax/2022.12
+module load synopsys/vc_static/2023.03-SP1
+module load synopsys/vc_vip_soc/2022.12
+module load synopsys/icc/2022.12
+module load synopsys/lc/2022.12                
+module load synopsys/primepwr/2022.12          
+module load synopsys/primesim_ra/2022.06-SP2a  
+module load synopsys/primesim_xa/2022.06-SP2   
+module load synopsys/primetime/2023.12-SP4     
+module load synopsys/rtla/2022.12-SP6          
+module load synopsys/spyglass/2023.12-SP1      
+module load synopsys/vcs/2023.03-SP2
+module load synopsys/verdi/2023.12-SP1
+module load synopsys/zoix/2022.06-SP2
