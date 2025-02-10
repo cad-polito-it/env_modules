@@ -69,6 +69,15 @@ Synopsys tools:
 - zoix Version Year : 2022.06-SP2
 - zoix Version Year : 2024.09
 
+Compilers and utils : 
+- eclipse Version : 4.5_0       
+- leon Version : 4.4-2            
+- openmsp Version : 19.0-0        
+- ppc Version : 4.9_4             
+- riscv Version : pulpinissimo    
+- riscv Version : pulpino         
+- ugp Version : 3        
+
 
 ## Contributors 
 - Michelangelo Bartolomucci (michelangelo.bartolomucci@polito.it)
