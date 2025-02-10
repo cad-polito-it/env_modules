@@ -1,0 +1,16 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    Powerpc - loads the openMSP 19.0-0 software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the openMS 19.0-0 environment}
+
+conflict compiler/openmsp
+
+setenv OPENMSP_PATH /software/ti
+
+prepend-path PATH [getenv OPENMSP_PATH]/msp430_gcc/bin
+
+prepend-path LD_LIBRARY_PATH /software/trng4/lib64

@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    Powerpc - loads the Eclipse 4.5-0 software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the Eclipse 4.5-0 environment}
+
+conflict compiler/eclipse
+
+setenv ECLIPSE_PATH /software/eclipse
+
+prepend-path PATH [getenv ECLIPSE_PATH]/cpp-mars2/eclipse
