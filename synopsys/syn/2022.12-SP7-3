@@ -20,3 +20,4 @@ setenv SYNOPSYS_LC_ROOT /eda/synopsys/2022-23/RHELx86/LC_2022.03-SP5
 prepend-path PATH [getenv SNPS_SYN]/bin
 prepend-path MANPATH [getenv SNPS_SYN]/doc/syn/man
 
+setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]
