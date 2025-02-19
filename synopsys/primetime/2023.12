@@ -1,0 +1,15 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys PRIMETIME 2023.12 - loads the PRIMETIME 2023.12 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the PRIMETIME 2023.12 environment}
+
+conflict synopsys/primetime
+
+setenv SNPS_PT /eda/synopsys/2023-24/RHELx86/PT_2023.12/
+
+prepend-path PATH [getenv SNPS_PT]/bin
+append-path MANPATH [getenv SNPS_PT]/doc/pt/man

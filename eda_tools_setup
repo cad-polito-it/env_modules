@@ -11,10 +11,10 @@ module load synopsys/syn/2023.12
 module load synopsys/zoix/2023.12
 
 ## dowloand
-module load synopsys/primetime/2023.12-SP4     
-module load synopsys/tmax/2022.12
-module load synopsys/vcs/2023.03-SP2
-module load synopsys/verdi/2023.12-SP1
+module load synopsys/primetime/2023.12
+module load synopsys/tmax/2023.12
+module load synopsys/vcs/2023.12
+module load synopsys/verdi/2023.12
 
 
 ## Compilers and utils   
