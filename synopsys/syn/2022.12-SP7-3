@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys SYN 2022.12-SP7-3 - loads the SYN 2022.12-SP7-3 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys SYN 2022.12-SP7-3 - loads the SYN 2022.12-SP7-3 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the 2022.12-SP7-3 environment}
@@ -19,5 +19,3 @@ setenv SYNOPSYS_LC_ROOT /eda/synopsys/2022-23/RHELx86/LC_2022.03-SP5
 
 prepend-path PATH [getenv SNPS_SYN]/bin
 prepend-path MANPATH [getenv SNPS_SYN]/doc/syn/man
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

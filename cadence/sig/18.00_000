@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    sig - loads the sig 18.00_000 software & application environment}
-	puts stderr {}
+puts stderr { sig - loads the sig 18.00_000 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the sig 18.00_000 environment}
@@ -11,5 +11,3 @@ conflict cadence/sig
 
 setenv CADENCE_SIG /eda/cadence/2018-19/RHELx86/SIG_18.00.000
 prepend-path PATH [getenv CADENCE_SIG]/tools/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

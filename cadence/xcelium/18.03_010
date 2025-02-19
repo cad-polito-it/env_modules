@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    xcelium - loads the xcelium 18.03_010 software & application environment}
-	puts stderr {}
+puts stderr { xcelium - loads the xcelium 18.03_010 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the xcelium 18.03_010 environment}
@@ -13,5 +13,3 @@ setenv CADENCE_XCELIUM /eda/cadence/2018-19/RHELx86/XCELIUM_18.03.010
 prepend-path PATH [getenv CADENCE_XCELIUM]/tools/cdsgcc/gcc/bin
 prepend-path PATH [getenv CADENCE_XCELIUM]/tools/bin
 prepend-path PATH [getenv CADENCE_XCELIUM]/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

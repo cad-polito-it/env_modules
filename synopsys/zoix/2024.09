@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys Z01X 2024.09 - loads the Z01X 2024.09 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys Z01X 2024.09 - loads the Z01X 2024.09 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the Z01X 2024.09 environment}
@@ -13,5 +13,3 @@ setenv SNPS_Z01X /software/synopsys/zoix/W-2024.09
 setenv ZOIXHOME [getenv SNPS_Z01X]
 
 prepend-path PATH [getenv SNPS_Z01X]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

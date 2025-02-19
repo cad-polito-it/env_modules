@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Siemens Tessent - loads the Tessent 2020.3 software & application environment}
-    puts stderr {}
+puts stderr { Siemens Tessent - loads the Tessent 2020.3 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the Tessent 2020.3 environment}
@@ -11,4 +11,3 @@ conflict siemens/tessent
 
 setenv TESSENT_PATH /eda/mentor/2020-21/RHELx86/TESSENT_2020.3
 
-prepend-path PATH [getenv TESSENT]/bin

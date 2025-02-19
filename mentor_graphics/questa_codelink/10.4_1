@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Siemens Questa CodeLink - loads the Questa CodeLink 10.4_1 software & application environment}
-    puts stderr {}
+puts stderr { Siemens Questa CodeLink - loads the Questa CodeLink 10.4_1 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the Questa CodeLink 10.4_1 environment}
@@ -13,5 +13,3 @@ setenv CODELINK_HOME /eda/mentor/2014-15/RHELx86/QUESTA-CODELINK_10.4_1
 
 prepend-path PATH [getenv CODELINK_HOME]/codelink_home.aol/bin
 prepend-path PATH [getenv CODELINK_HOME]/codelink_home.ixl/bin
-
-setenv MGLS_LICENSE_FILE [getenv LICENSE_SERVICES]

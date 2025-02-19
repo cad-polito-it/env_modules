@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys RTL-Architect 2022.12 - loads the RTL-Architect 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys RTL-Architect 2022.12 - loads the RTL-Architect 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the RTL-Architect 2022.12 environment}
@@ -12,5 +12,3 @@ conflict synopsys/rtla
 setenv SNPS_RTLA /software/synopsys/rtla/U-2022.12-SP6
 
 prepend-path PATH [getenv SNPS_RTLA]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

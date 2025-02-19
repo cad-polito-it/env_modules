@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Siemens Questa Core Prime - loads the Questa Core Prime 10.5c-4 software & application environment}
-    puts stderr {}
+puts stderr { Siemens Questa Core Prime - loads the Questa Core Prime 10.5c-4 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the Questa Core Prime 10.5c-4 environment}
@@ -11,4 +11,3 @@ conflict siemens/questa-core-prime
 
 setenv QCORE_PRIME /software/eda/mentor/2016-17/RHELx86/QUESTA-CORE-PRIME_10.5c-4/
 
-prepend-path PATH [getenv QCORE_PRIME]/bin

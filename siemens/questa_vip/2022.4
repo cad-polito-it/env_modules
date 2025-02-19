@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Siemens Questa Vip - loads the Questa Vip 2022.4 software & application environment}
-    puts stderr {}
+puts stderr { Siemens Questa Vip - loads the Questa Vip 2022.4 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the Questa Vip 2022.4 environment}
@@ -11,4 +11,3 @@ conflict siemens/questa-vip
 
 setenv QVIP_HOME /eda/Siemens/2022-23/RHELx86/QUESTA-VIP_2022.4
 
-prepend-path PATH [getenv QVIP_HOME]/bin

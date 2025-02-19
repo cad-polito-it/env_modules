@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    mdv - loads the mdv 18.03_005 software & application environment}
-	puts stderr {}
+puts stderr { mdv - loads the mdv 18.03_005 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the mdv 18.03_005 environment}
@@ -11,5 +11,3 @@ conflict cadence/mdv
 
 setenv CADENCE_MDV /eda/cadence/2018-19/RHELx86/MDV_18.03.005
 prepend-path PATH [getenv CADENCE_MDV]/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

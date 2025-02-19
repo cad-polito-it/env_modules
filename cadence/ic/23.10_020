@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    ic - loads the ic 23.10_020 software & application environment}
-	puts stderr {}
+puts stderr { ic - loads the ic 23.10_020 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the ic 23.10_020 environment}
@@ -11,5 +11,3 @@ conflict cadence/ic
 
 setenv CADENCE_IC /eda/cadence/2023-24/RHELx86/IC_23.10.020
 prepend-path PATH [getenv CADENCE_IC]/tools/dfII/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

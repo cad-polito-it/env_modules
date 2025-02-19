@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys HSPICE 2022.12 - loads the HSPICE 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys HSPICE 2022.12 - loads the HSPICE 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the HSPICE 2022.12 environment}
@@ -15,5 +15,3 @@ setenv CDPL_HOME [getenv SNPS_HSPICE]/cdpl
 
 prepend-path PATH [getenv SNPS_HSPICE]/bin
 prepend-path PATH [getenv CDPL_HOME]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

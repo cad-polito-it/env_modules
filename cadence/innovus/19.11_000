@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    innovus - loads the innovus 19.11_000 software & application environment}
-	puts stderr {}
+puts stderr { innovus - loads the innovus 19.11_000 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the innovus 19.11_000 environment}
@@ -11,5 +11,3 @@ conflict cadence/innovus
 
 setenv CADENCE_INNOVUS /eda/cadence/2019-20/RHELx86/INNOVUS_19.11.000
 prepend-path PATH [getenv CADENCE_INNOVUS]/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

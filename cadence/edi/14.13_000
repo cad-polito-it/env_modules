@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    edi - loads the edi 14.13_000 software & application environment}
-	puts stderr {}
+puts stderr { edi - loads the edi 14.13_000 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the edi 14.13_000 environment}
@@ -11,5 +11,3 @@ conflict cadence/edi
 
 setenv CADENCE_EDI /eda/cadence/2014-15/RHELx86/EDI_14.13.000
 prepend-path PATH [getenv CADENCE_EDI]/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

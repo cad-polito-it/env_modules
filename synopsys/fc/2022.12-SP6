@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys Fusion Compiler 2022.12 - loads the Fusion Compiler 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys Fusion Compiler 2022.12 - loads the Fusion Compiler 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the Fusion Compiler 2022.12 environment}
@@ -12,5 +12,3 @@ conflict synopsys/fc
 setenv SNPS_FC /software/synopsys/fusioncompiler/U-2022.12-SP6
 
 prepend-path PATH [getenv SNPS_FC]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

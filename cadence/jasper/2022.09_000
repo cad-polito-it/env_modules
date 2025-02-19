@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    jasper - loads the jasper 2022.09_000 software & application environment}
-	puts stderr {}
+puts stderr { jasper - loads the jasper 2022.09_000 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the jasper 2022.09_000 environment}
@@ -11,5 +11,3 @@ conflict cadence/jasper
 
 setenv CADENCE_JASPER /eda/cadence/2022-23/RHELx86/JASPER_2022.09.000
 prepend-path PATH [getenv CADENCE_JASPER]/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys VC VIP SOC 2022.12 - loads the VC VIP SOC 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys VC VIP SOC 2022.12 - loads the VC VIP SOC 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the VC VIP SOC 2022.12 environment}
@@ -12,5 +12,3 @@ conflict synopsys/vc_vip_soc
 setenv DESIGNWARE_HOME /eda/synopsys/2022-23/RHELx86/VC-VIP-SOC_2022.12
 
 prepend-path PATH [getenv DESIGNWARE_HOME]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

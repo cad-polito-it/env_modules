@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys LC 2022.12 - loads the LC 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys LC 2022.12 - loads the LC 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the LC 2022.12 environment}
@@ -16,5 +16,3 @@ prepend-path PATH [getenv SNPS_LC]/bin
 prepend-path MANPATH [getenv SNPS_LC]/doc/syn/man
 
 append-path LD_LIBRARY_PATH [getenv SNPS_LC]/linux64/lc/shlib
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

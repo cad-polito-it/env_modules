@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Siemens Questa Infact - loads the Questa Infact 10.3d_2 software & application environment}
-    puts stderr {}
+puts stderr { Siemens Questa Infact - loads the Questa Infact 10.3d_2 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the Questa Infact 10.3d_2 environment}
@@ -12,5 +12,3 @@ conflict siemens/questa-infact
 setenv QUESTA_INFACT_HOME /eda/mentor/2014-15/RHELx86/QUESTA-INFACT_10.3d_2/infact
 
 prepend-path PATH [getenv QUESTA_INFACT_HOME]/bin
-
-setenv MGLS_LICENSE_FILE [getenv LICENSE_SERVICES]

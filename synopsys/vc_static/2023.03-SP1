@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys VC STATIC 2023.03 SP1 - loads the VC STATIC 2023.03 SP1 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys VC STATIC 2023.03 SP1 - loads the VC STATIC 2023.03 SP1 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the VC STATIC 2023.03 SP1 environment}
@@ -12,5 +12,3 @@ conflict synopsys/vc_static
 setenv VC_STATIC_HOME /software/synopsys/vc_static/U-2023.03-SP1
 
 prepend-path PATH [getenv VC_STATIC_HOME]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

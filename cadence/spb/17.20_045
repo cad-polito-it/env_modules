@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    spb - loads the spb 17.20_045 software & application environment}
-	puts stderr {}
+puts stderr { spb - loads the spb 17.20_045 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the spb 17.20_045 environment}
@@ -11,5 +11,3 @@ conflict cadence/spb
 
 setenv CADENCE_SPB /eda/cadence/2018-19/RHELx86/SPB_17.20.045
 prepend-path PATH [getenv CADENCE_SPB]/tools/fet/bin #FETPATH
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

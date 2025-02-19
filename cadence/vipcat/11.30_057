@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    vipcat - loads the vipcat 11.30_057 software & application environment}
-	puts stderr {}
+puts stderr { vipcat - loads the vipcat 11.30_057 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the vipcat 11.30_057 environment}
@@ -11,5 +11,3 @@ conflict cadence/vipcat
 
 setenv CADENCE_VIPCAT /eda/cadence/2018-19/RHELx86/VIPCAT_11.30.057_UVM
 prepend-path PATH [getenv CADENCE_VIPCAT]/tools/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

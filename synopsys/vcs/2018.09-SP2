@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys VCS 2018.09-SP2 - loads the VCS 2018.09-SP2 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys VCS 2018.09-SP2 - loads the VCS 2018.09-SP2 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the VCS 2018.09-SP2 environment}
@@ -15,5 +15,3 @@ setenv VCS_TARGET_ARCH amd64
 
 prepend-path PATH [getenv VCS_HOME]/bin
 prepend-path MANPATH [getenv VCS_HOME]/doc/man
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

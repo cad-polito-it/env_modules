@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys ICC2 2022.12 - loads the ICC2 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys ICC2 2022.12 - loads the ICC2 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the ICC2 2022.12 environment}
@@ -13,5 +13,3 @@ setenv SNPS_ICC2 /eda/synopsys/2022-23/RHELx86/ICC2_2022.12
 
 prepend-path PATH [getenv SNPS_ICC2]/bin
 prepend-path MANPATH [getenv SNPS_ICC2]/doc/ICC2/man
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

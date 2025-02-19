@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    incisive - loads the incisive 14.10_004 software & application environment}
-	puts stderr {}
+puts stderr { incisive - loads the incisive 14.10_004 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the incisive 14.10_004 environment}
@@ -12,5 +12,3 @@ conflict cadence/incisive
 setenv CADENCE_INCISIVE /eda/cadence/2014-15/RHELx86/INCISIVE_14.10.004
 prepend-path PATH [getenv CADENCE_INCISIVE]
 prepend-path PATH [getenv CADENCE_INCISIVE]/kits/VerificationKit/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

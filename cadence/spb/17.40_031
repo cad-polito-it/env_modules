@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    spb - loads the spb 17.40_031 software & application environment}
-	puts stderr {}
+puts stderr { spb - loads the spb 17.40_031 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the spb 17.40_031 environment}
@@ -10,4 +10,3 @@ module-whatis {loads the spb 17.40_031 environment}
 conflict cadence/spb
 
 setenv CADENCE_SPB /eda/cadence/2022-23/RHELx86/SPB_17.40.031
-prepend-path PATH [getenv CADENCE_SPB]/tools/fet/bin #FETPATH

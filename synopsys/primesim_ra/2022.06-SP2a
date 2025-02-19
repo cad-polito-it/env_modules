@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys PSIM RA 2022.06 SP2a - loads the PSIM RA 2022.06 SP2a software & application environment}
-    puts stderr {}
+puts stderr { Synopsys PSIM RA 2022.06 SP2a - loads the PSIM RA 2022.06 SP2a software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the PSIM RA 2022.06 SP2a environment}
@@ -12,5 +12,3 @@ conflict synopsys/primesim_ra
 setenv SNPS_PSIM_RA /eda/synopsys/2022-23/RHELx86/PSIM-RA_2022.06-SP2a
 
 prepend-path PATH [getenv SNPS_PSIM_RA]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

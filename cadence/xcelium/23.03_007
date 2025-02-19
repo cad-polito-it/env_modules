@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    xcelium - loads the xcelium 23.03_007 software & application environment}
-	puts stderr {}
+puts stderr { xcelium - loads the xcelium 23.03_007 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the xcelium 23.03_007 environment}
@@ -13,5 +13,3 @@ setenv CADENCE_XCELIUM /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/
 prepend-path PATH [getenv CADENCE_XCELIUM]/tools/cdsgcc/gcc/bin
 prepend-path PATH [getenv CADENCE_XCELIUM]/tools/bin
 prepend-path PATH [getenv CADENCE_XCELIUM]/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

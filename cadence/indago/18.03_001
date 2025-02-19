@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    indago - loads the indago 18.03_001 software & application environment}
-	puts stderr {}
+puts stderr { indago - loads the indago 18.03_001 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the indago 18.03_001 environment}
@@ -11,5 +11,3 @@ conflict cadence/indago
 
 setenv CADENCE_INDAGO /eda/cadence/2018-19/RHELx86/INDAGO_18.03.001
 prepend-path PATH [getenv CADENCE_INDAGO]/bin
-
-setenv CDS_LIC_FILE [getenv LICENSE_SERVICES]

@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys TestMAX 2022.12 - loads the TestMAX 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys TestMAX 2022.12 - loads the TestMAX 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the TestMAX 2022.12 environment}
@@ -13,5 +13,3 @@ setenv SNPS_TMAX /eda/synopsys/2022-23/RHELx86/TMAX_2022.12
 setenv SYNOPSYS_TMAX [getenv SNPS_TMAX]
 
 prepend-path PATH [getenv SNPS_TMAX]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys ESP 2022.12 - loads the ESP 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys ESP 2022.12 - loads the ESP 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the ESP2022.12 environment}
@@ -15,5 +15,3 @@ setenv SYNOPSYS_LC_ROOT /eda/synopsys/2022-23/RHELx86/LC_2022.03-SP5
 
 prepend-path PATH [getenv SNPS_ESP]/bin
 prepend-path MANPATH [getenv SNPS_ESP]/doc/esp/man
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]

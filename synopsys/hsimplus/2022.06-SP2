@@ -1,8 +1,8 @@
 #%Module
 
 proc ModulesHelp {} {
-    puts stderr {    Synopsys HSIMPLUS 2022.12 - loads the HSIMPLUS 2022.12 software & application environment}
-    puts stderr {}
+puts stderr { Synopsys HSIMPLUS 2022.12 - loads the HSIMPLUS 2022.12 software & application environment}
+puts stderr {}
 }
 
 module-whatis {loads the HSIMPLUS 2022.12 environment}
@@ -12,5 +12,3 @@ conflict synopsys/hsimplus
 setenv SNPS_HSIMPLUS /eda/synopsys/2022-23/RHELx86/HSIMPLUS_2022.06-SP2/hsimplus
 
 prepend-path PATH [getenv SNPS_HSIMPLUS]/bin
-
-setenv SNPSLMD_LICENSE_FILE [getenv LICENSE_SERVICES]
