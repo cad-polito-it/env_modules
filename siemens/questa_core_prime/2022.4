@@ -9,5 +9,6 @@ module-whatis {loads the Questa Core Prime 2022.4 environment}
 
 conflict siemens/questa-core-prime
 
-setenv QCORE_PRIME /eda/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4
+setenv QCORE_PRIME /eda/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim
 
+prepend-path PATH [getenv QCORE_PRIME]/bin
