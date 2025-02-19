@@ -57,6 +57,6 @@ module load compiler/eclipse/4.5_0
 module load compiler/leon/4.4-2            
 module load compiler/openmsp/19.0-0        
 module load compiler/ppc/4.9_4             
+## riscv compilers are mutually exclusive
 module load compiler/riscv/pulpinissimo    
-module load compiler/riscv/pulpino         
 module load compiler/ugp/3        
