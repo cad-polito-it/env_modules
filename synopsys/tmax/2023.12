@@ -1,7 +1,7 @@
 #%Module
 
 proc ModulesHelp {} {
-puts stderr { Synopsys TestMAX 2023.12 - loads the TestMAX 2023.12 software & application environment}
+puts stderr { Synopsys TMAX 2023.12 - loads the TestMAX 2023.12 software & application environment}
 puts stderr {}
 }
 
@@ -9,7 +9,7 @@ module-whatis {loads the TestMAX 2023.12 environment}
 
 conflict synopsys/tmax
 
-setenv SNPS_TMAX /eda/synopsys/2023-24/RHELx86/TESTMAX_2023.12
+setenv SNPS_TMAX /eda/synopsys/2023-24/RHELx86/TMAX_2023.12
 setenv SYNOPSYS_TMAX [getenv SNPS_TMAX]
 
 prepend-path PATH [getenv SNPS_TMAX]/bin
