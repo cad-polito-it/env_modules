@@ -9,12 +9,12 @@ module-whatis {loads the Questa Core Prime 2021.3.2 environment}
 
 conflict siemens/questa-core-prime
 
-setenv QCORE_PRIME /eda/Siemens/2021-22/RHELx86/QUESTA-CORE-PRIME_2021.3_2
+setenv QCORE_PRIME /eda/Siemens/2021-22/RHELx86/QUESTA-CORE-PRIME_2021.3_2/questasim
 
 setenv MTI_HOME /eda/Siemens/2021-22/RHELx86/QUESTA-CORE-PRIME_2021.3_2/questasim/linux_x86_64
 
 setenv MODEL_TECH [getenv MTI_HOME]
 
-setnev QUESTASIM_HOME [getenv MTI_HOME]
+setenv QUESTASIM_HOME [getenv MTI_HOME]
 
 prepend-path PATH [getenv MTI_HOME]

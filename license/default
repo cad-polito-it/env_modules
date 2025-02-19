@@ -9,7 +9,7 @@ module-whatis {loads the default licensing environment}
 
 conflict license/default
 
-setenv LICENSE_SERVICES {7000:localhost}
+setenv LICENSE_SERVICES {7000@localhost}
 
 ###### GENERAL ######
 setenv LM_LICENSE_FILE [getenv LICENSE_SERVICES]

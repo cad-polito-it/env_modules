@@ -11,3 +11,4 @@ conflict siemens/questa-core-prime
 
 setenv QCORE_PRIME /software/eda/mentor/2016-17/RHELx86/QUESTA-CORE-PRIME_10.5c-4/
 
+prepend-path PATH [getenv QCORE_PRIME]/bin
