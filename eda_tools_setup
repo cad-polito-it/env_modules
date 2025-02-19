@@ -1,5 +1,8 @@
 #!/bin/bash
 
+###### LICENSE ######
+module load license/default
+
 ###### CADENCE TOOLS ######
 module load cadence/edi/14.13_000
 module load cadence/ic/23.10_020
