@@ -11,4 +11,4 @@ conflict compiler/riscv
 
 setenv MTI_VCO_MODE 64
 setenv PULP_RISCV_GCC_TOOLCHAIN /software/riscv
-export RISCV /sofware/riscv/
+setenv RISCV /sofware/riscv/
