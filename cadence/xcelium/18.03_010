@@ -13,3 +13,5 @@ setenv CADENCE_XCELIUM /eda/cadence/2018-19/RHELx86/XCELIUM_18.03.010
 prepend-path PATH [getenv CADENCE_XCELIUM]/tools/cdsgcc/gcc/bin
 prepend-path PATH [getenv CADENCE_XCELIUM]/tools/bin
 prepend-path PATH [getenv CADENCE_XCELIUM]/bin
+
+set-alias help_cds_xcelium { $CADENCE_XCELIUM/tools/cdnshelp/bin/cdnshelp & } 

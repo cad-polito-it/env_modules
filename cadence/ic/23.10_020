@@ -11,3 +11,4 @@ conflict cadence/ic
 
 setenv CADENCE_IC /eda/cadence/2023-24/RHELx86/IC_23.10.020
 prepend-path PATH [getenv CADENCE_IC]/tools/dfII/bin
+set-alias help_cds_ic { $CADENCE_IC/tools/cdnshelp/bin/cdnshelp & } 
