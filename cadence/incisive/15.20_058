@@ -10,4 +10,7 @@ module-whatis {loads the incisive 15.20_058 environment}
 conflict cadence/incisive
 
 setenv CADENCE_INCISIVE /eda/cadence/2018-19/RHELx86/INCISIVE_15.20.058
+prepend-path PATH [getenv CADENCE_INCISIVE]/bin
+prepend-path PATH [getenv CADENCE_INCISIVE]/tools/bin/
+prepend-path PATH [getenv CADENCE_INCISIVE]/tools/systemc/gcc/bin
 prepend-path PATH [getenv CADENCE_INCISIVE]/kits/VerificationKit/bin
