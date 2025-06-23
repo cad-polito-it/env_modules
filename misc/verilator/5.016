@@ -1,0 +1,16 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {   loads the verilator software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the verilator 5.016 environment}
+
+conflict misc/verilator
+
+setenv VERILATOR_ROOT /software/verilator/
+
+setenv VERILATOR_INCLUDE /software/verilator/include
+
+prepend-path PATH [getenv VERILATOR_ROOT]/bin
