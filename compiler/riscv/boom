@@ -10,7 +10,7 @@ module-whatis {loads the riscv compiler for BooM architecture and spike simulato
 conflict compiler/riscv
 
 setenv RISCV /software/riscv_boom/
-set SPIKE_INSTALL_DIR /software/riscv_boom/spike/
+setenv SPIKE_INSTALL_DIR /software/riscv_boom/spike/
 
 prepend-path PATH [getenv RISCV]/bin
 prepend-path PATH [getenv SPIKE_INSTALL_DIR]/bin
