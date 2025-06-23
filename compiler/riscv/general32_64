@@ -9,8 +9,8 @@ module-whatis {loads the general riscv32/64 environment and spike simulator}
 
 conflict compiler/riscv
 
-setenv RISCV /software/riscv/
-setenv SPIKE_INSTALL_DIR /software/riscv/spike/
+setenv RISCV /software/riscv
+setenv SPIKE_INSTALL_DIR /software/riscv/spike
 
 prepend-path PATH [getenv RISCV]/bin
 prepend-path PATH [getenv SPIKE_INSTALL_DIR]/bin
