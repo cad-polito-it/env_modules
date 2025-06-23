@@ -1,7 +1,7 @@
 #%Module
 
 proc ModulesHelp {} {
-	puts stderr {    Powerpc - loads the Pulpino software & application environment}
+	puts stderr {    Riscv - loads the Pulpino software & application environment}
 	puts stderr {}
 }
 

@@ -1,0 +1,18 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    Riscv - loads the riscv compiler for BooM architecture and spike simulator}
+	puts stderr {}
+}
+
+module-whatis {loads the riscv compiler for BooM architecture and spike simulator}
+
+conflict compiler/riscv
+
+setenv RISCV /software/riscv_boom/
+setenv SPIKE_INSTALL_DIR /software/riscv_boom/spike/
+
+prepend-path PATH [getenv RISCV]/bin
+prepend-path PATH [getenv SPIKE_INSTALL_DIR]/bin
+prepend-path LD_LIBRARY_PATH [getenv RISCV]/lib
+prepend-path LD_LIBRARY_PATH [getenv SPIKE_INSTALL_DIR]/lib

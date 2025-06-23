@@ -1,0 +1,15 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    Riscv - loads the general riscv 32 software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the general riscv32  environment}
+
+conflict compiler/riscv
+
+setenv RISCV /software/xpack-riscv-none-embed-gcc-10.2.0-1.1
+
+prepend-path PATH [getenv RISCV]/bin
+prepend-path LD_LIBRARY_PATH [getenv RISCV]/lib

@@ -75,8 +75,12 @@ Compilers and utils :
 - openmsp Version : 19.0-0        
 - ppc Version : 4.9_4             
 - riscv Version : pulpinissimo    
-- riscv Version : pulpino         
-- ugp Version : 3        
+- riscv Version : pulpino   
+- riscv Version : BOOM toolchain
+- riscv Version : general 32-64 bit compiler
+- riscv Version : general 32-general riscv gcc 10.2      
+- ugp Version : 3    
+- verilaror Version : 5.0.16    
 
 
 ## Contributors 
