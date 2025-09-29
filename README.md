@@ -79,6 +79,7 @@ Compilers and utils :
 - riscv Version : BOOM toolchain
 - riscv Version : general 32-64 bit compiler
 - riscv Version : general 32-general riscv gcc 10.2      
+- riscv version : Wally toolchain
 - ugp Version : 3    
 - verilaror Version : 5.0.16    
 
