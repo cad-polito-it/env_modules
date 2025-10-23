@@ -4,18 +4,14 @@
 module load license/default
 
 ###### SIEMENTS/MENTOR TOOLS ######
-module load siemens/questa_core_prime/2021.3.2
+module load siemens/questa_core_prime/2023.4
 
 ###### SYNOPSYS TOOLS ######
-module load synopsys/syn/2023.12
-module load synopsys/zoix/2023.12
-
-## dowloand
-module load synopsys/primetime/2023.12
-module load synopsys/tmax/2023.12
-module load synopsys/vcs/2023.12
-module load synopsys/verdi/2023.12
-
+module load synopsys/syn/2024.09-SP2
+module load synopsys/tmax/2024.09-SP2
+module load synopsys/vcs/2024.09-SP1
+module load synopsys/verdi/2024.09-SP1
+module load synopsys/zoix/2024.09-SP1
 
 ## Compilers and utils   
-module load compiler/riscv/pulpino         
+module load compiler/riscv/rv64_rv32

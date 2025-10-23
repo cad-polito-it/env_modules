@@ -1,0 +1,16 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys Verdi 2024.09-SP1 - loads the Verdi 2024.09-SP1 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the Verdi 2024.09-SP1 environment}
+
+conflict synopsys/verdi
+
+setenv SNPS_VERDI /eda/synopsys/2024-25/RHELx86/VERDI_2024.09-SP1
+setenv NOVAS_HOME [getenv SNPS_VERDI]
+setenv VERDI_HOME [getenv SNPS_VERDI]
+
+prepend-path PATH [getenv SNPS_VERDI]/bin

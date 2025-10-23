@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Siemens Questa Core Prime - loads the Questa Core Prime 2023.4 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the Questa Core Prime 2023.4 environment}
+
+conflict siemens/questa-core-prime
+
+setenv QCORE_PRIME /eda/Siemens/2023-24/RHELx86/QUESTA-CORE-PRIME_2023.4/questasim
+
+prepend-path PATH [getenv QCORE_PRIME]/bin

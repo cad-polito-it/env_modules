@@ -1,0 +1,17 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys SYN 2024.09-SP2 - loads the SYN 2024.09-SP2 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the SYN 2024.09-SP2 environment}
+
+conflict synopsys/syn
+
+setenv SNPS_SYN /eda/synopsys/2024-25/RHELx86/SYN_2024.09-SP2
+setenv SYNOPSYS_SYN_ROOT [getenv SNPS_SYN]
+#setenv SYNOPSYS_LC_ROOT /eda/synopsys/2022-23/RHELx86/LC_2022.03-SP5
+
+prepend-path PATH [getenv SNPS_SYN]/bin
+prepend-path MANPATH [getenv SNPS_SYN]/doc/syn/man
