@@ -1,7 +1,7 @@
 #%Module
 
 proc ModulesHelp {} {
-puts stderr { Synopsys Verdi 2024.09-SP1 - loads the Verdi 2024.09-SP1 SP1 software & application environment}
+puts stderr { Synopsys Verdi 2024.09-SP1 - loads the Verdi 2024.09-SP1 software & application environment}
 puts stderr {}
 }
 
