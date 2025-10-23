@@ -1,11 +1,11 @@
 #%Module
 
 proc ModulesHelp {} {
-puts stderr { Synopsys VCS 2024.09-SP1 SP1 - loads the VCS 2024.09-SP1 SP1 software & application environment}
+puts stderr { Synopsys VCS 2024.09-SP1 - loads the VCS 2024.09-SP1 software & application environment}
 puts stderr {}
 }
 
-module-whatis {loads the VCS 2024.09-SP1 SP1 environment}
+module-whatis {loads the VCS 2024.09-SP1 environment}
 
 conflict synopsys/vcs
 
