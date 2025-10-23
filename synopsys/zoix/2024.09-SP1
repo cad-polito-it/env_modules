@@ -1,7 +1,7 @@
 #%Module
 
 proc ModulesHelp {} {
-puts stderr { Synopsys Z01X 2024.09-SP1 - loads the Z01X 2024.09-SP1 software & application environment}
+puts stderr { Synopsys ZO1X 2024.09-SP1 - loads the ZO1X 2024.09-SP1 software & application environment}
 puts stderr {}
 }
 
