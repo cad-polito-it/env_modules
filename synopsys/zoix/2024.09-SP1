@@ -5,7 +5,7 @@ puts stderr { Synopsys ZO1X 2024.09-SP1 - loads the ZO1X 2024.09-SP1 software & 
 puts stderr {}
 }
 
-module-whatis {loads the Z01X 2024.09-SP1 environment}
+module-whatis {loads the ZO1X 2024.09-SP1 environment}
 
 conflict synopsys/zoix
 
