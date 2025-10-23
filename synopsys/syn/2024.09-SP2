@@ -5,7 +5,7 @@ puts stderr { Synopsys SYN 2024.09-SP2 - loads the SYN 2024.09-SP2 software & ap
 puts stderr {}
 }
 
-module-whatis {loads the SYN2024.09-SP2 environment}
+module-whatis {loads the SYN 2024.09-SP2 environment}
 
 conflict synopsys/syn
 
