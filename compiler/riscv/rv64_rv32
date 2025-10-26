@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+	puts stderr {    RISCV - loads the generic Risc-V software & application environment}
+	puts stderr {}
+}
+
+module-whatis {loads the generic Risc-V environment}
+
+conflict compiler/riscv
+
+setenv RISCV /eda/compiler/riscv_rv64_rc32
+
+prepend-path PATH [getenv RISCV]/bin
