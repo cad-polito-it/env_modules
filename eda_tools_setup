@@ -12,6 +12,7 @@ module load synopsys/tmax/2024.09-SP2
 module load synopsys/vcs/2024.09-SP1
 module load synopsys/verdi/2024.09-SP1
 module load synopsys/zoix/2024.09-SP1
+module load synopsys/pt/2024.09-SP2
 
 ## Compilers and utils   
 module load compiler/riscv/rv64_rv32
