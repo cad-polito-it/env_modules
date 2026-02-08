@@ -1,0 +1,18 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys LC LC_2024.09-SP2 - loads the LC LC_2024.09-SP2 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the LC LC_2024.09-SP2 environment}
+
+conflict synopsys/lc
+
+setenv SNPS_LC /eda/synopsys/2024-25/RHELx86/LC_2024.09-SP2
+setenv SYNOPSYS_SYN_ROOT /eda/synopsys/2022-23/RHELx86/SYN_LC_2024.09-SP2
+
+prepend-path PATH [getenv SNPS_LC]/bin
+prepend-path MANPATH [getenv SNPS_LC]/doc/syn/man
+
+prepend-path LD_LIBRARY_PATH [getenv SNPS_LC]/linux64/lc/shlib
