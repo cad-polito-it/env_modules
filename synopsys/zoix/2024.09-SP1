@@ -1,0 +1,15 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys Z01X 2024.09-SP1 - loads the Z01X 2024.09-SP1 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the Z01X 2024.09-SP1 environment}
+
+conflict synopsys/zoix
+
+setenv SNPS_Z01X /eda/synopsys/2024-25/RHELx86/Z01X_2024.09-SP1
+setenv ZOIXHOME [getenv SNPS_Z01X]
+
+prepend-path PATH [getenv SNPS_Z01X]/bin
