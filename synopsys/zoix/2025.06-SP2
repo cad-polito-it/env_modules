@@ -1,15 +1,15 @@
 #%Module
 
 proc ModulesHelp {} {
-puts stderr { Synopsys Z01X 2025.09-SP2 - loads the Z01X 2025.09-SP2 software & application environment}
+puts stderr { Synopsys Z01X 2025.06-SP2 - loads the Z01X 2025.06-SP2 software & application environment}
 puts stderr {}
 }
 
-module-whatis {loads the Z01X 2025.09-SP2 environment}
+module-whatis {loads the Z01X 2025.06-SP2 environment}
 
 conflict synopsys/zoix
 
-setenv SNPS_Z01X /eda/synopsys/2025-26/RHELx86/Z01X_2025.09-SP2
+setenv SNPS_Z01X /eda/synopsys/2025-26/RHELx86/Z01X_2025.06-SP2
 setenv ZOIXHOME [getenv SNPS_Z01X]
 
 prepend-path PATH [getenv SNPS_Z01X]/bin
