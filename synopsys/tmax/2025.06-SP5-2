@@ -1,0 +1,15 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys TestMAX 2025.06-SP5-2 - loads the TestMAX 2025.06-SP5-2 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the TestMAX 2025.06-SP5-2 environment}
+
+conflict synopsys/tmax
+
+setenv SNPS_TMAX /software/synopsys/txs/X-2025.06-SP5-2/
+setenv SYNOPSYS_TMAX [getenv SNPS_TMAX]
+
+prepend-path PATH [getenv SNPS_TMAX]/bin
