@@ -1,0 +1,16 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys SpyGlass 2024.09 SP1 - loads the SpyGlass 2024.09 SP1 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the SpyGlass 2024.09 SP1 environment}
+
+conflict synopsys/spyglass
+
+setenv SPYGLASS_HOME /eda/synopsys/2024-25/RHELx86/SPYGLASS_2024.09-SP1
+setenv SG_HTML_BROWSER /usr/bin/firefox
+setenv SG_PDF_VIEWER /usr/bin/xpdf
+
+prepend-path PATH [getenv SPYGLASS_HOME]/bin
