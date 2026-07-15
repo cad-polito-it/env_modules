@@ -1,0 +1,16 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { ic - loads the ic 25.10_030 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the ic 25.10_030 environment}
+
+conflict cadence/ic
+
+setenv CADENCE_IC /eda/cadence/2025-26/RHELx86/IC_25.10.030/
+prepend-path PATH [getenv CADENCE_IC]/tools/dfII/bin
+prepend-path PATH [getenv CADENCE_IC]/tools.lnx86/dfII/etc/tools/
+prepend-path PATH [getenv CADENCE_IC]/bin
+set-alias help_cds_ic { $CADENCE_IC/tools/cdnshelp/bin/cdnshelp & } 
