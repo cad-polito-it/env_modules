@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { innovus - loads the innovus 23.33_000 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the innovus 23.33_000 environment}
+
+conflict cadence/innovus
+
+setenv CADENCE_INNOVUS /eda/cadence/2024-25/RHELx86/DDIEXPORT_23.33.000/
+prepend-path PATH [getenv CADENCE_INNOVUS]/bin
+set-alias help_cds_innovus { $CADENCE_INNOVUS/INNOVUS231/tools/bin/cdnshelp & } 
