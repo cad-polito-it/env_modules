@@ -1,0 +1,16 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys SpyGlass 2025.06-SP2 - loads the SpyGlass 2025.06-SP2 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the SpyGlass 2025.06-SP2 environment}
+
+conflict synopsys/spyglass
+
+setenv SPYGLASS_HOME /eda/synopsys/2025-26/RHELx86/SPUGLASS_2025.06-SP2
+setenv SG_HTML_BROWSER /usr/bin/firefox
+setenv SG_PDF_VIEWER /usr/bin/xpdf
+
+prepend-path PATH [getenv SPYGLASS_HOME]/bin
