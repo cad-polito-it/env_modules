@@ -9,7 +9,7 @@ module-whatis {loads the SpyGlass 2025.06-SP2 environment}
 
 conflict synopsys/spyglass
 
-setenv SPYGLASS_HOME /eda/synopsys/2025-26/RHELx86/SPYGLASS_2025.06-SP2
+setenv SPYGLASS_HOME /eda/synopsys/2025-26/RHELx86/SPYGLASS_2025.06-SP2/SPYGLASS_HOME
 setenv SG_HTML_BROWSER /usr/bin/firefox
 setenv SG_PDF_VIEWER /usr/bin/xpdf
 
