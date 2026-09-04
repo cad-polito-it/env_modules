@@ -13,3 +13,4 @@ setenv SNPS_TMAX /eda/synopsys/2025-26/RHELx86/TESTMAX_2025.06-SP2
 setenv SYNOPSYS_TMAX [getenv SNPS_TMAX]
 
 prepend-path PATH [getenv SNPS_TMAX]/bin
+prepend-path PATH [getenv SNPS_TMAX]/amd64/syn/bin/
