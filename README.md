@@ -49,25 +49,33 @@ Synopsys tools:
 - hspice Version Year : 2022.06-SP2        
 - syn Version Year : 2022.12
 - syn Version Year : 2022.12-SP7-3
+- syn Version Year : 2025.06-SP4
 - tmax Version Year : 2022.12
+- tmax Version Year : 2025.06-SP2
 - vc_static Version Year : 2023.03-SP1
 - vc_vip_soc Version Year : 2022.12
 - icc Version Year : 2022.12
 - vcs Version Year : 2018.09-SP2
-- lc Version Year : 2022.12                
+- lc Version Year : 2022.12
+- lc Version Year : 2025.06-SP2                
 - primepwr Version Year : 2022.12          
 - primesim_ra Version Year : 2022.06-SP2a  
 - primesim_xa Version Year : 2022.06-SP2   
 - primetime Version Year : 2023.12-SP4     
+- primetime Version Year : 2025.06-SP2     
 - rtla Version Year : 2022.12-SP6          
-- spyglass Version Year : 2023.12-SP1      
+- spyglass Version Year : 2023.12-SP1
+- spyglass Version Year : 2025.06-SP2      
 - vcs Version Year : 2023.03-SP2
 - vcs Version Year : 2023.12-SP1
+- vcs Version Year : 2025.06-SP2
 - verdi Version Year : 2023.03-1
 - verdi Version Year : 2023.12-SP1
+- verdi Version Year : 2025.06-SP2
 - zoix Version Year : 2018.09-SP2-3
 - zoix Version Year : 2022.06-SP2
 - zoix Version Year : 2024.09
+- zoix Version Year : 2025.06-SP2
 
 Compilers and utils : 
 - eclipse Version : 4.5_0       
