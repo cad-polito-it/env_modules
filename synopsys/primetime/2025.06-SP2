@@ -9,7 +9,7 @@ module-whatis {loads the PRIMETIME 2025.06-SP2 environment}
 
 conflict synopsys/primetime
 
-setenv SNPS_PT /eda/synopsys/2025-26/RHELx86/PT_2025.06-SP2/
+setenv SNPS_PT /eda/synopsys/2025-26/RHELx86/PT_2025.06-SP2-1/
 setenv SYNOPSYS_LC_ROOT /eda/synopsys/2025-26/RHELx86/LC_2025.06-SP2
 
 prepend-path PATH [getenv SNPS_PT]/bin
