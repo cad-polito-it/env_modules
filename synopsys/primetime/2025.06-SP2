@@ -1,0 +1,16 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys PRIMETIME 2025.06-SP2 - loads the PRIMETIME 2025.06-SP2 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the PRIMETIME 2025.06-SP2 environment}
+
+conflict synopsys/primetime
+
+setenv SNPS_PT /eda/synopsys/2025-26/RHELx86/PT_2025.06-SP2-1/
+setenv SYNOPSYS_LC_ROOT /eda/synopsys/2025-26/RHELx86/LC_2025.06-SP2
+
+prepend-path PATH [getenv SNPS_PT]/bin
+append-path MANPATH [getenv SNPS_PT]/doc/pt/man
