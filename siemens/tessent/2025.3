@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Siemens Tessent - loads the Tessent 2025.3 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the Tessent 2025.3 environment}
+
+conflict siemens/tessent
+
+setenv TESSENT_PATH /eda/Siemens/2025-26/RHELx86/TESSENT_2025.3/tessent_2025.3-p1
+
+prepend-path PATH [getenv TESSENT_PATH]/bin

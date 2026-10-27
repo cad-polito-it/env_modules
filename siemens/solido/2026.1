@@ -1,0 +1,15 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Siemens Solito - loads the Solido 2026.1 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the Solido 2026.1environment}
+
+conflict siemens/solid
+
+setenv SOLIDO_PATH /eda/Siemens/2025-26/RHELx86/SOLIDO_2026.1
+
+prepend-path PATH [getenv SOLIDO_PATH]/bin
+prepend-path PATH [getenv SOLIDO_PATH]/tools/bin
