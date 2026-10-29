@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Synopsys VC FSM 2025.06-SP2 - loads the VC FSM 2025.06-SP2 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the VC FSM 2025.06-SP2 environment}
+
+conflict synopsys/vc_fsm
+
+setenv VC_FSM_HOME /eda/synopsys/2025-26/RHELx86/VC-FSM_2025.06-SP2/
+
+prepend-path PATH [getenv VC_FSM_HOME]/bin
