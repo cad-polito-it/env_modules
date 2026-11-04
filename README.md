@@ -37,7 +37,8 @@ Siemens/Mentor graphics tools:
 - tessent Version Year : 2016.4
 - tessent Version Year : 2020.3
 - tessent Version Year : 2022.3
-
+- tessent Version Year : 2025.3
+- tessent Version Year : 2026.3
 
 Synopsys tools:
 - coretools Version Year : 2022.12
