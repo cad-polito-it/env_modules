@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp {} {
+puts stderr { Siemens Tessent - loads the Tessent 2026.3 software & application environment}
+puts stderr {}
+}
+
+module-whatis {loads the Tessent 2026.3 environment}
+
+conflict siemens/tessent
+
+setenv TESSENT_PATH /eda/Siemens/2026-27/RHELx86/TESSENT_2026.3/
+
+prepend-path PATH [getenv TESSENT_PATH]/bin
